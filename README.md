@@ -1,3 +1,5 @@
+# This is an implementation of a novel game theoretic method for imitation learning. 
+
 # Reproducing coinrun expriements in Colab: Recommended way. 
 
 ```
@@ -92,6 +94,5 @@ python main.py --env-name CoinRun --num-levels 0 --high-difficulty False --algo 
 ```
 
 # Acknowledgments.
-This is an implementation of a novel method for imitation learning. 
 The classical gail and ppo algorithms are from <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr-gail>.
 
