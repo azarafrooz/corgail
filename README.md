@@ -73,7 +73,8 @@ pip install -e .
 cd ..
 ```
  
-## CorGAIL-Pendulum: for visualization, point the visualize_training_dynamics.py to the logs/pendulum/ .For classic environments smaller pruning leads to faster learning. Please change inc from 2000 to 100 in utils.py -> ```queue_update(queue, m, K, t, ft, inc=100)```
+## CorGAIL-Pendulum:
+### for visualization, point the visualize_training_dynamics.py to the logs/pendulum/ .For classic environments smaller pruning leads to faster learning. Please change inc from 2000 to 100 in utils.py -> ```queue_update(queue, m, K, t, ft, inc=100)```
 ```
 python main.py --env-name Pendulum-v0 --algo ppo --cor-gail --use-gae --log-interval 10 --num-steps 64 --num-processes 8 --lr 3e-5 --entropy-coef 0 --value-loss-coef 0.5 --ppo-epoch 10 --gail-epoch 1 --num-mini-batch 8 --gamma 0.99 --gae-lambda 0.95 --queue-size 10 --num-env-steps 5000000 --seed 0 --log-dir logs/pendulum/corgail-0/
 
